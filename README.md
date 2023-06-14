@@ -1,35 +1,48 @@
 # SHAPClab_UrbanPerception_SpatiotemporalChanges
-This study aims to analyze the changes in urban spatial perception across different time periods and geographical spaces, as well as to explore the visual elements affecting these perceptual changes. By examining street view images of Shanghai in 2013 and 2019, the research investigates the distribution of urban spatial perception, the geographical distribution of perceptual enhancement, and the correlation analysis among perceptions.
+# Urban Heat Comfort Evaluation Based on Accessibility and Solar Radiation Analysis
 
-Key findings include:
+This project presents a comprehensive approach for evaluating urban heat comfort based on a detailed analysis of accessibility and solar radiation data for urban streets. The system developed here uses cutting-edge geospatial analysis techniques and high-resolution solar radiation simulations to provide insightful, actionable information to urban planners and other interested parties.
 
-Urban spatial perception improvement is mainly concentrated in the peripheral areas of the city, such as Baoshan District and Pudong District, with the most significant enhancement in the areas near the Huangpu River in Pudong District. At the same time, there are instances of perceptual decline in the city center areas, like Putuo District, Changning District, and Xuhui District.
-Through the statistical and visualization analysis of perceptual differences, it is found that the overall distribution of urban perceptual difference scores follows a normal distribution. Although there are areas with perceptual score decline in the city, the proportion of perceptual enhancement is higher, indicating an overall trend of increasing perception in urban development.
-From the inner city to the outer city, there is a consistency in perceptual enhancement across urban spaces. This reflects the city's construction strategy during these six years, with more focus on the central areas between the inner and outer cities.
-Through correlation analysis, it is found that the differences in trees, roads, and plants have a positive correlation with perceptual differences, while the differences in buildings, sky, sidewalks, walls, and fences have a negative correlation. In urban planning and construction, it is essential to fully consider the balance and coordination of various visual elements to improve the perception level of urban residents.
-This research offers valuable insights into the changes in urban spatial perception for urban planners and builders, helping them better understand the perceptual needs of city residents and optimize urban construction strategies.
+## Overview
 
-![UrbanPerceptionchange](http://m.qpic.cn/psc?/V51wK6B50SnpHF0Ql90V120XkX2YMvAu/bqQfVz5yrrGYSXMvKr.cqVctPsSd2gGhCwJI85Wh1t.4o3oNon*Fc68cniSxe85mDE9OeFp14J5yOm1lIqbniGu8N5MeDxPG*czGRTcts2Q!/b&bo=bg44Bm4OOAYBNxA!&rf=viewer_4&t=5 "UrbanPerceptionchange")
+The system has been designed to give a better understanding of urban heat comfort by combining two primary factors - accessibility and solar radiation. In this context, accessibility is a measure of how easily a location can be reached from other locations in a city. Solar radiation is a key contributor to thermal comfort. The results of this analysis can be used by city planners to design more thermally comfortable cities.
+
+The top 20% most accessible streets are classified as highly accessible, while streets with the highest 20% solar radiation are considered high radiation streets. Conversely, streets with the lowest 20% solar radiation are classified as low radiation streets. A combination of these geospatial positions is used to identify areas with high accessibility but different levels of solar radiation.
+
+In areas with high accessibility, high solar radiation indicates that people may feel hotter due to direct sun exposure and experience poor thermal comfort. On the other hand, low solar radiation indicates that people may feel less direct sun exposure, thus experiencing better thermal comfort and urban shading effects.
+
+## Key Features
+
+1. **Highly Accurate Solar Radiation Simulation**: This project uses high-resolution data and advanced algorithms to simulate the amount of solar radiation received on different streets in the city.
+
+2. **Accessibility Analysis**: The project also includes a detailed accessibility analysis of city streets, which provides valuable information about how easy it is for people to reach different parts of the city.
+
+3. **Combined Analysis of Solar Radiation and Accessibility**: By combining solar radiation data with accessibility information, this project offers a more comprehensive understanding of urban heat comfort. This combined analysis can highlight areas of the city that are both highly accessible and have either high or low solar radiation.
+
+4. **Visualisation**: The project also provides clear visual representations of the data, making it easier for city planners and other stakeholders to understand and act on the information provided.
+
+This project provides a powerful tool for understanding and improving urban heat comfort, and we hope it will be useful to urban planners and researchers around the world.
+
+![UrbanPerceptionchange](http://m.qpic.cn/psc?/V51wK6B50SnpHF0Ql90V120XkX2YMvAu/bqQfVz5yrrGYSXMvKr.cqefeDUb0jFbQhmCaFt.3Dg.nKcdg41gydpM9DDsYZ5VmyOEcXxIKeDIW8swEvDZ3FEmU6gBksVj4vuHMleLwRGY!/b&bo=IQdABiEHQAYBByA!&rf=viewer_4 "UrbanPerceptionchange")
 # Information
 The research is carried out under the SHAPC-lab and the lab director & the corresponding author:Jie He academic social networks page:<br>
 http://faculty.hitsz.edu.cn/hejie
 
 For more information related to the research, please follow the laboratory's WeChat Official Account:<br>
-![空间人文与场所计算](http://faculty.hitsz.edu.cn/ueditor/jsp/upload/image/20211206/1638770351934059707.jpeg "空间人文与场所计算")
+![空间人文与场所计算](http://m.qpic.cn/psc?/V51wK6B50SnpHF0Ql90V120XkX2YMvAu/bqQfVz5yrrGYSXMvKr.cqaGvn*U8.XtKGUKoCXp2T7*rr64Fh949noTXvtqynumAfdG91L2EpB0ozp5TDQDefp4ivWRqPAlBcUTccYj7QHE!/b&bo=lgGcAZYBnAEBByA!&rf=viewer_4 "空间人文与场所计算")
 # Requirements
-- MIT PlacePulse 2.0
 - Jupyter notebook
 - ArcGIS software
 # Python Requirements
 - Pillow
-- Pandas
+- GeoPandas
 - Numpy
 - Matplotlib
 - sklearn
 # Usage
-- training model and drawing figure source code<br>
+- Processing solar radiation source code<br>
 `processing_code`<br>
-- Street View image perception scoring<br>
+- Street View mete information<br>
 `streetview_data`<br>
-- Urban perception and street view collection point data<br>
+- Solar radiation result and street view collection point data<br>
 `gis_data`<br>
